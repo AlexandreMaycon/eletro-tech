@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -------------- SIDEBAR -------------- */
+
+.perfil {
+  cursor: pointer;
+
+}
+
+.perfil:hover {
+  color: #f1f1f1;
+  /* transition: 0.5s; */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(42,35,68);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255,255,204);
+  display: block;
+  transition: 0.3s;
+  padding-top: 1.5rem;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 8px 8px 32px;
+  font-size: 20px;
+  transition: 0.3s;
+  padding-top: 1.5rem;
+  color: rgb(255,255,204);
+}
+
+#main {
+  transition: margin-left .5s;
+  display: flex;
+  padding: 15px;
+  width: 95vw;
+}
+
+#main img{
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* -------------- Pefil --------------- */
+
+dialog {
+  font-size: 1rem;
+  margin: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background: #f4f4f4;
+  border-radius: 3px;
+  position: relative;
+  max-width: 80%;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+  width: 27%;
+  text-align: center;
+}
+
+dialog header {
+  background: rgb(42,35,68);
+  padding: 0.2em;
+  text-align: right;
+  border-radius: 3px 0 0 3px;
+}
+
+dialog h5 {
+  padding: 0.7em;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+dialog h5 span {
+  color: rgb(88, 88, 88);
+}
+
+.close-dialog-btn {
+  border-radius: 100%;
+  border: none;
+  background-color: rgb(171, 23, 23);
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+
+
+dialog::backdrop {
+  backdrop-filter: blur(1px);
+}
+
+@media(max-width: 700px) {
+  dialog {
+    max-width: 90%;
+  }
+
+  dialog p {
+    padding: 1.5em;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* ---------------- Planos ------------------ */
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* cursor: pointer; */
+}
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card p {
+  color: #5c5c59;
+  font-size: 16px;
+}
+
+.image {
+  float: right;
+  align-self: flex-end;
+  max-width: 44px;
+  max-height: 44px;
+}
+
+.blue {
+  border-left: 3px solid #4895ff;
+}
+
+.green {
+  border-left: 3px solid #3bb54a;
+}
+
+.red {
+  border-left: 3px solid #d0ff00;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+  background-color: #d0ff00;
+  padding: 4px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 85px;
+
+}
+
+/* -------------- FeedBack e EditUser ---------------- */
+
+.messageError {
+  font-size: 12px;
+  color: red;
+}
+
+.gradiente {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(205,204,212,1) 31%, rgba(151,148,164,1) 48%, rgba(99,94,118,1) 67%, rgba(70,64,92,1) 83%, rgba(42,35,68,1) 100%);
+  width: 100vw;
+  height: 83.3vh;
+}
+
+.btn-ativo{
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(42,35,68);
+  padding: .5rem;
+  color: rgb(255,255,204);
+  border-radius: 7px;
+  margin-top:2rem;
+}
+
+.btn-bloqueado{
+  cursor: no-drop;
+  display: block;
+  margin: 0 auto;
+  padding: .5rem;
+  color: rgb(42,35,68);
+  border-radius: 7px;
+  margin-top:2rem;
+}
+
+/* --------- Scroll ---------- */
+body::-webkit-scrollbar {
+  width: 6px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(42,35,68);    /* color of the scroll thumb */
+  border-radius: 4px;       /* roundness of the scroll thumb */
+}
+
+@media (max-width:768px){
+
+  .card{
+      width:350px;
+  }
+  dialog {
+    width: 100%;
+  }
+
+}

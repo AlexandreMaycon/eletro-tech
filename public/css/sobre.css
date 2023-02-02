@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300;600;800&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu{
+    display: flex; 
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.navbar li{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo{
+    display: flex;
+    color: #68a051;
+    font-weight: 600;
+    padding-right: 4rem;
+    font-size: 1.6rem;
+}
+
+#logo .tech{
+    color: black;
+}
+
+.sobre h3{
+    font-weight: 600;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.historia{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.sobre{
+    padding: 1rem;
+    background-color: #efefefef;
+}
+
+.historia-imagem{
+    width: 50%;
+    
+}
+
+.imagem-sobre{
+    width: 90%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.historia-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.historia-texto p{
+    padding:1.5rem 0 1.5rem 0;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.valores-texto p{
+    padding:1.5rem 0 1.5rem 0;
+    font-size: 1.2rem;
+    text-align: justify;
+    max-width: 400px;
+}
+
+.valores{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(42,35,68);
+    color: #fff;
+    padding: 1rem;
+}
+
+.valores button{
+    width: 50%;
+    padding: .7rem;
+    background-color: rgba(252,185,0,1);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.valores button a{
+    text-decoration: none;
+    color: black;
+}
+
+.imagem-valores{
+    height: 350px;
+    width: 100%;
+   object-fit: cover;
+}
+
+.check{
+    width: 50px;
+}
+
+.qualidades{
+    display: flex;
+    margin-top: 2.6rem;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.qualidades-box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qualidades-box p{
+    padding: .5rem 0;
+   text-align: center;
+}
+
+footer {
+    margin-top: 5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer-bar {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-bar ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+#item-footer {
+    padding-left: .5rem;
+}
+
+.contatos li {
+    padding: .3rem 0;
+}
+
+/* --------- Scroll ---------- */
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(42,35,68);    /* color of the scroll thumb */
+    border-radius: 4px;       /* roundness of the scroll thumb */
+  }
+
+  @media (max-width:768px){
+    .imagem-sobre{
+        display: none;
+    }
+    .historia-imagem{
+        display: none;
+    }
+    .historia{
+        width: 100%;
+    }
+    #main img {
+        width: 35%;
+    }
+    .historia-texto{
+        width: 100%;
+    }
+    .qualidades{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+  }
+
